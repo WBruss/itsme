@@ -22,6 +22,20 @@
                         </ul>
                    </div>                
         </div>
+        <script>
+            window.onscroll = function(){myFunction()};
+            var navbar = document.getElementById("nav");
+            var sticky = navbar.offsetTop;
+
+            function myFunction(){
+                if (window.pageYOffset > (sticky + 2)){
+                    navbar.classList.add("sticky")
+                }
+                else{
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
 
         <div id="page1">
             <a id="about" class="smooth"></a>
@@ -45,9 +59,38 @@ work my way up to my target as I work for companies that require software develo
                 </h1>
 
                 <div class="grid-container">
-                        <div class="grid-item">C</div>
-                        <div class="grid-item">Python</div>
-                        <div class="grid-item">HTML/CSS</div>
+                        <div class="grid-item">
+                            <div class = "icon">
+                                <p class = "icon_txt">C</p>
+                                <p class = "icon_content">
+                                    I am an intermediate C programmer.
+                                    I like how level C is. What you code is what you get. 
+                                    I know the basics; variables, conditional statements, loops, pointers and arrays.
+                                    I want to work on embended systems.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                                <div class = "icon">
+                                    <p>Python</p>
+                                    <p class = "icon_content">
+                                            I am still learning Pyhton. Everybody is anyway. I've not yet done 
+                                            much with it. I'm learning it on Codecademy. Python amazes me for its 
+                                            wide applications. I'm planning to use it for web development and mobile
+                                            app development.
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                    <div class = "icon">
+                                        <p>HTML<br>CSS</p>
+                                        <p class = "icon_content">
+                                                I have worked with HTML/CSS for quite some time now. This is where my programming
+                                                journey began. I didn't know much of what I was doing then. This is the first serious 
+                                                project I've coded in HTML/CSS. 
+                                            </p>
+                                    </div>
+                                </div>
                       </div>
 
         </div>
